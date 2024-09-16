@@ -122,6 +122,21 @@
               background-color: #88ff00; /* Flash background color */
               color: #333333; /* Text color */
           }
+
+            /* Style for the iframe container */
+            .iframe-container {
+                width: 100%; /* Full width of the parent */
+                height: 500px; /* Adjust height as needed */
+                border: none; /* No border */
+                display: none; /* Hidden by default */
+            }
+            details[open] .iframe-container {
+                display: block; /* Show iframe when details are open */
+            }
+            summary {
+                cursor: pointer;
+                font-weight: bold;
+            }
   
   </style>
 </head>
