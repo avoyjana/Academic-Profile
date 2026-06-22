@@ -296,9 +296,19 @@ I would also like to mention a few close friends whom I deeply trust. They have 
                 <li><a href="cubicspline.html" target="_blank" class="open-link"> Cubic Spline Interpolation</a></li>
                 </ul>
             </div>
+
+<div id="content"></div>
+
+<script>
+fetch('links.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('content').innerHTML = data;
+    });
+</script>
             <div class="section" id="books">
                  <h2>E-books, Research papers, Study materials</h2
-                 <a href="links.html"></a>
+                 <iframe src="links.html"></iframe>
 
             </div>
             <div class="section" id="literature">
